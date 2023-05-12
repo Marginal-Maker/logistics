@@ -92,7 +92,7 @@
                 <version>${commons-lang3.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.commons</groupId>
+                <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
             </dependency>
@@ -131,16 +131,19 @@
                 <artifactId>mybatis-spring</artifactId>
                 <version>${mybatis.spring.version}</version>
             </dependency>
+            <!--分页插件-->
             <dependency>
                 <groupId>com.github.miemiedev</groupId>
                 <artifactId>mybatis-paginator</artifactId>
                 <version>${mybatis.paginator.version}</version>
             </dependency>
+            <!--分页插件-->
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper</artifactId>
                 <version>${pagehelper.version}</version>
             </dependency>
+            <!--该插件协助将复杂的SQL语句解析成Java类层次结构-->
             <dependency>
                 <groupId>com.github.jsqlparser</groupId>
                 <artifactId>jsqlparser</artifactId>
@@ -164,6 +167,7 @@
                 <artifactId>spring-context</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
@@ -174,6 +178,7 @@
                 <artifactId>spring-webmvc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!--简化对JBDC的编程-->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jdbc</artifactId>
@@ -184,6 +189,7 @@
                 <artifactId>spring-aspects</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!--消息服务-->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jms</artifactId>
@@ -194,18 +200,22 @@
                 <artifactId>spring-context-support</artifactId>
                 <version>${spring.version}</version>
             </dependency>
-            <!--JSP相关-->
+
+            <!--JSP动态网页技术标准相关-->
+            <!--快速在web页面${名称}-->
             <dependency>
                 <groupId>jstl</groupId>
                 <artifactId>jstl</artifactId>
                 <version>${jstl.version}</version>
             </dependency>
+            <!--提供编写servlet时要用到 ：HttpServletRequest和HttpServletResponse 等对象-->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>servlet-api</artifactId>
                 <version>${servlet-api.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <!--web项目里面开发jsp页面的时候，使用action调用servlet里面get和post方法的时候需要这个jar包-->
             <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>jsp-api</artifactId>
@@ -262,7 +272,7 @@
             <plugins>
                 <plugin>
                     <groupId>org.apache.tomcat.maver</groupId>
-                    <artifactId>tomcat-maver-plugin</artifactId>
+                    <artifactId>tomcat7-maver-plugin</artifactId>
                     <version>2.2</version>
                 </plugin>
             </plugins>

@@ -1,38 +1,52 @@
 package com.example.pojo;
 
 public class User {
-    private Integer id;
+    private Integer userId;
 
-    private String uname;
+    private String userName;
 
-    private String pwd;
+    private String realName;
+
+    private String password;
 
     private String email;
 
-    private Integer role;
+    private Long phone;
 
-    public Integer getId() {
-        return id;
+    private String u1;
+
+    private String u2;
+
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
-    public String getUname() {
-        return uname;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUname(String uname) {
-        this.uname = uname == null ? null : uname.trim();
+    public void setUserName(String userName) {
+        this.userName = userName == null ? null : userName.trim();
     }
 
-    public String getPwd() {
-        return pwd;
+    public String getRealName() {
+        return realName;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd == null ? null : pwd.trim();
+    public void setRealName(String realName) {
+        this.realName = realName == null ? null : realName.trim();
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
     }
 
     public String getEmail() {
@@ -43,11 +57,41 @@ public class User {
         this.email = email == null ? null : email.trim();
     }
 
-    public Integer getRole() {
-        return role;
+    public Long getPhone() {
+        return phone;
     }
 
-    public void setRole(Integer role) {
-        this.role = role;
+    public void setPhone(Long phone) {
+        this.phone = phone;
+    }
+
+    public String getU1() {
+        return u1;
+    }
+
+    public void setU1(String u1) {
+        this.u1 = u1 == null ? null : u1.trim();
+    }
+
+    public String getU2() {
+        return u2;
+    }
+
+    public void setU2(String u2) {
+        this.u2 = u2 == null ? null : u2.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", realName='" + realName + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", phone=" + phone +
+                ", u1='" + u1 + '\'' +
+                ", u2='" + u2 + '\'' +
+                '}';
     }
 }

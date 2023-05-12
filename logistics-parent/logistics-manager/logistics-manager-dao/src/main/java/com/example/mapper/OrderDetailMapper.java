@@ -2,8 +2,9 @@ package com.example.mapper;
 
 import com.example.pojo.OrderDetail;
 import com.example.pojo.OrderDetailExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface OrderDetailMapper {
     int countByExample(OrderDetailExample example);

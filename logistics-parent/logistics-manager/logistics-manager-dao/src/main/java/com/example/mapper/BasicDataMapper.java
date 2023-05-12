@@ -1,10 +1,8 @@
 package com.example.mapper;
-
 import com.example.pojo.BasicData;
 import com.example.pojo.BasicDataExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-
 public interface BasicDataMapper {
     int countByExample(BasicDataExample example);
 

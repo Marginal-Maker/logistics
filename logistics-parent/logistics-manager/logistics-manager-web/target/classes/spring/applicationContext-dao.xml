@@ -15,9 +15,10 @@
         http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util-4.2.xsd">
-
-    <context:property-placeholder location="classpath: properties/db.properties"/>
-
+    <!--配置数据库连接池-->
+    <!--加载配置文件-->
+    <context:property-placeholder location="classpath*: properties/db.properties" ignore-unresolvable="true"/>
+    <!--数据库连接池-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="url" value="${jdbc.url}"/>
         <property name="username" value="${jdbc.username}"/>
@@ -26,11 +27,17 @@
         <property name="maxActive" value="10"/>
         <property name="minIdle" value="5"/>
     </bean>
+    <!--让spring管理sqlsessionfactory-->
+
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--数据库连接池-->
         <property name="dataSource" ref="dataSource"/>
+        <!--mybatis全局配置文件-->
         <property name="configLocation" value="classpath:mybatis/mybatis-cfg.xml"/>
+        <!--映射文件-->
         <property name="mapperLocations" value="classpath*:mapper/*.xml"/>
     </bean>
+    <!--配置接口文件扫描器-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.example.mapper"/>
     </bean>
