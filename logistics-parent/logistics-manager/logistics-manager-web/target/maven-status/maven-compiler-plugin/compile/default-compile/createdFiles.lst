@@ -1,2 +1,4 @@
 com\example\controller\PageController.class
+com\example\controller\RoleController.class
 test.class
+com\example\controller\UserController.class

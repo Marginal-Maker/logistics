@@ -1,9 +1,11 @@
+com\example\pojo\UserRoleExample$Criterion.class
 com\example\pojo\RoleExample$GeneratedCriteria.class
 com\example\pojo\OrderDetailExample$Criterion.class
 com\example\pojo\Order.class
 com\example\pojo\BasicDataExample$Criteria.class
 com\example\pojo\BasicDataExample$Criterion.class
 com\example\pojo\OrderDetailExample.class
+com\example\dto\UserDto.class
 com\example\pojo\BasicDataExample.class
 com\example\pojo\MenuExample$GeneratedCriteria.class
 com\example\pojo\OrderDetailExample$GeneratedCriteria.class
@@ -13,6 +15,7 @@ com\example\pojo\OrderDetailExample$Criteria.class
 com\example\pojo\CustomerExample$Criterion.class
 com\example\pojo\MenuExample$Criterion.class
 com\example\pojo\UserExample.class
+com\example\pojo\UserRoleKey.class
 com\example\pojo\MenuExample.class
 com\example\pojo\User.class
 com\example\pojo\OrderExample.class
@@ -23,11 +26,15 @@ com\example\pojo\Customer.class
 com\example\pojo\BasicData.class
 com\example\pojo\CustomerExample$Criteria.class
 com\example\pojo\OrderExample$GeneratedCriteria.class
+com\example\pojo\UserRoleExample$Criteria.class
+com\example\dto\BasePage.class
 com\example\pojo\OrderExample$Criterion.class
 com\example\pojo\BasicDataExample$GeneratedCriteria.class
 com\example\pojo\CustomerExample$GeneratedCriteria.class
+com\example\pojo\UserRoleExample.class
 com\example\pojo\OrderDetail.class
 com\example\pojo\OrderExample$Criteria.class
+com\example\pojo\UserRoleExample$GeneratedCriteria.class
 com\example\pojo\MenuExample$Criteria.class
 com\example\pojo\UserExample$Criteria.class
 com\example\pojo\CustomerExample.class
